@@ -30,6 +30,17 @@ int multiply_numbers(int a, int b)
     return a * b;
 }
 
+// A / B ‚ğŒvZ‚·‚éŠÖ”
+int divide_numbers(int a, int b)
+{
+    if (b == 0) {
+        fputs("zero division\n", stderr);
+        return 0;
+    }
+    return a / b;
+}
+
+
 
 int main()
 {
@@ -47,6 +58,10 @@ int main()
     // A * B‚ÌŒ‹‰Ê‚ğ•\¦‚·‚é
     int mul_result = multiply_numbers(lhs, rhs);
     printf("A * B = %d\n", mul_result);
+
+    // A / B‚ÌŒ‹‰Ê‚ğ•\¦‚·‚é
+    int div_result = divide_numbers(lhs, rhs);
+    printf("A / B = %d\n", div_result);
 
 
     return 0;
