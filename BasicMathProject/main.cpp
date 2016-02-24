@@ -18,6 +18,12 @@ int add_numbers(int a, int b)
     return a + b;
 }
 
+// A - B ‚ğŒvZ‚·‚éŠÖ”
+int subtract_numbers(int a, int b)
+{
+    return a - b;
+}
+
 
 int main()
 {
@@ -27,6 +33,10 @@ int main()
     // A + B‚ÌŒ‹‰Ê‚ğ•\¦‚·‚é
     int add_result = add_numbers(lhs, rhs);
     printf("A + B = %d\n", add_result);
+
+    // A - B‚ÌŒ‹‰Ê‚ğ•\¦‚·‚é
+    int sub_result = subtract_numbers(lhs, rhs);
+    printf("A - B = %d\n", sub_result);
 
 
     return 0;
