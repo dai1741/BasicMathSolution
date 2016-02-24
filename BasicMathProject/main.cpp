@@ -6,13 +6,13 @@
 int lhs;  // 左辺値
 int rhs;  // 右辺値
 
-          // 2つの数値を読み込む
+// 2つの数値を読み込む
 void read_input_numbers()
 {
     scanf_s("%d%d", &lhs, &rhs);
 }
 
-// a + b を計算する関数
+// A + B を計算する関数
 int add_numbers(int a, int b)
 {
     return a + b;
@@ -24,7 +24,7 @@ int main()
     // 2つの整数値A, Bを標準入力から読み込む
     read_input_numbers();
 
-    // A+Bの結果を表示する
+    // A + Bの結果を表示する
     int add_result = add_numbers(lhs, rhs);
     printf("A + B = %d\n", add_result);
 
